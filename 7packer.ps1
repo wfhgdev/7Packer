@@ -2,8 +2,11 @@
 .SYNOPSIS
     Script avanzado para comprimir archivos individuales usando 7-Zip.
     Permite autoinstalación de 7-Zip, filtrado por extensiones y selección gráfica de carpetas.
-    Versión: 3.0
+    Versión: 3.1
 #>
+
+# Forzar a la consola de PowerShell a utilizar codificación UTF-8 para evitar caracteres extraños
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 # Cargar ensamblado para usar la interfaz gráfica de selección de carpetas
 Add-Type -AssemblyName System.Windows.Forms
@@ -20,7 +23,7 @@ function Seleccionar-Carpeta($titulo) {
 
 Clear-Host
 
-# Banner de texto personalizado (Usa un literal heredoc '@ ... '@ para respetar el backtick y las barras invertidas)
+# Banner de texto personalizado
 $banner = @'
  _____ ___           _             
 |___  / _ \__ _  ___| | _____ _ __ 
@@ -29,6 +32,7 @@ $banner = @'
  /_/\/    \__,_|\___|_|\_\___|_|   
                                    
 by William Hernandez
+Repositorio: https://github.com/wfhgdev/7Packer.git
 '@
 
 Write-Host $banner -ForegroundColor Cyan
@@ -104,7 +108,7 @@ while ($extension -notin @("7z", "zip")) {
 
 $nivel = ""
 while ($nivel -notin @("0", "1", "3", "5", "7", "9")) {
-    $nivel = Read-Host "[4/6] Nivel de compresión (0=Copiar, 1=Rápido, 5=Normal, 9=Ultra)"
+    $nivel = Read-Host "[4/6] Nivel de compresión (0=Copiar, 1=Rápido, 5=Normal, 7=Máxima, 9=Ultra)"
 }
 
 # 5. Configuración de contraseña
