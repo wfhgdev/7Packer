@@ -1,7 +1,7 @@
 <#
 .SYNOPSIS
     Script avanzado para comprimir archivos individuales usando 7-Zip.
-    Version: 3.2 (Edicion Inmune a errores de codificacion)
+    Version: 1.0 (Edicion Inmune a errores de codificacion)
 #>
 
 # Forzar codificacion estandar
