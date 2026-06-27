@@ -1,12 +1,14 @@
 # 7Packer 🚀
 
-   _____ ___           _             
-  |___  / _ \__ _  ___| | _____ _ __ 
-     / / /_)/ _` |/ __| |/ / _ \ '__|
-    / / ___/ (_| | (__|   <  __/ |   
-   /_/\/    \__,_|\___|_|\_\___|_|   
-                                     
-  by William Hernandez
+```text
+ _____ ___           _             
+|___  / _ \__ _  ___| | _____ _ __ 
+   / / /_)/ _` |/ __| |/ / _ \ '__|
+  / / ___/ (_| | (__|   <  __/ |   
+ /_/\/    \__,_|\___|_|\_\___|_|   
+                                   
+by William Hernandez
+```
 
 7Packer es un script avanzado e interactivo de PowerShell diseñado para automatizar la compresión de archivos individuales utilizando el motor de **7-Zip**. Es ideal para organizar colecciones de datos, preparar ROMs, respaldar documentos o empaquetar una gran cantidad de archivos de forma masiva e independiente, manteniendo intacta la estructura de tus carpetas.
 
@@ -65,4 +67,4 @@ Así se ve **7Packer** en acción:
 Este proyecto está bajo la licencia MIT. Siéntete libre de modificarlo, distribuirlo y adaptarlo a tus necesidades.
 
 ---
-Desarrollado con ❤️ por **William Hernandez**
+Desarrollado por **William Hernandez**
